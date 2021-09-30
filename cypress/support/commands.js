@@ -23,3 +23,9 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.Commands.add("selecionaMedicamento", (medicamento) => {
+    cy.get(".chakra-text").contains(medicamento).parent().parent().within(() => {
+        cy.get(".chakra-checkbox").click()
+    })
+})

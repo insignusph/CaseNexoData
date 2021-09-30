@@ -1,1 +1,6 @@
-{}
+{
+    "DefaultCommandTimeout": 6000,
+    "env": {
+        "receita": "NXT6WYD"
+    }
+}
